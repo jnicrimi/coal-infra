@@ -1,4 +1,4 @@
-# template
+# coal-infra
 
 ## Setup
 

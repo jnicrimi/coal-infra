@@ -6,6 +6,7 @@ zizmor = "1.25.2"
 gitleaks = "8.30.1"
 lefthook = "2.1.9"
 terraform = "1.15.5"
+aws-cli = "2.34.64"
 
 [tasks.setup]
 description = "環境基盤を最新化"

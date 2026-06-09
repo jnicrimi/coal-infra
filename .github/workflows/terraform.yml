@@ -12,8 +12,8 @@ permissions:
   contents: read
 
 jobs:
-  fmt:
-    name: fmt
+  terraform-fmt:
+    name: terraform-fmt
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -26,8 +26,8 @@ jobs:
       - name: terraform fmt
         run: mise run tf:fmt
 
-  validate:
-    name: validate
+  terraform-validate:
+    name: terraform-validate
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:

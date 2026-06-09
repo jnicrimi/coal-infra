@@ -21,5 +21,15 @@
   "vulnerabilityAlerts": {
     "minimumReleaseAge": "0 days",
     "labels": ["security"]
-  }
+  },
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/(^|/)\\.tflint\\.hcl$/"],
+      "matchStrings": [
+        "plugin\\s+\"aws\"\\s*\\{[\\s\\S]*?version\\s*=\\s*\"(?<currentValue>[^\"]+)\"[\\s\\S]*?source\\s*=\\s*\"github\\.com/(?<depName>[^\"]+)\""
+      ],
+      "datasourceTemplate": "github-releases"
+    }
+  ]
 }

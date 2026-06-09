@@ -24,7 +24,10 @@ run = "terraform fmt -check -recursive"
 ["tf:validate"]
 description = "Terraform 構成を検証"
 dir = "{{config_root}}/terraform"
-run = ["terraform init -backend=false -input=false", "terraform validate"]
+run = [
+  "terraform init -backend=false -input=false -lockfile=readonly",
+  "terraform validate",
+]
 
 ["tf:lint"]
 description = "tflint で Terraform を静的解析"

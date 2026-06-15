@@ -21,6 +21,11 @@
     {
       "matchUpdateTypes": ["pin", "pinDigest"],
       "minimumReleaseAge": "0 days"
+    },
+    {
+      "matchPackageNames": ["hashicorp/terraform"],
+      "groupName": "terraform",
+      "groupSlug": "terraform"
     }
   ],
   "vulnerabilityAlerts": {

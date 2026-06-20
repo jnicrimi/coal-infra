@@ -1,13 +1,13 @@
 [tools]
-pnpm = "11.6.0"
-node = "24.16.0"
+pnpm = "11.7.0"
+node = "24.17.0"
 actionlint = "1.7.12"
 zizmor = "1.25.2"
 gitleaks = "8.30.1"
 lefthook = "2.1.9"
 terraform = "1.15.6"
 tflint = "0.63.1"
-aws-cli = "2.35.4"
+aws-cli = "2.35.6"
 
 [tasks.setup]
 description = "環境基盤を最新化"
